@@ -1,6 +1,6 @@
 # SweetBites - Bakery Order & Inventory Management System
 
-[![Version](https://img.shields.io/badge/version-1.0.0-orange.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-1.1.0-orange.svg)](CHANGELOG.md)
 [![Database Schema](https://img.shields.io/badge/sqlite_schema-v4-blue.svg)](lib/core/constants.dart)
 [![Platform](https://img.shields.io/badge/platform-Android%20%7C%20iOS-green.svg)](#)
 

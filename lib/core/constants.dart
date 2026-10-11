@@ -7,7 +7,7 @@ class AppConstants {
 
   // App & Version
   static const String appName = 'SweetBites';
-  static const String appVersion = '1.0.0';
+  static const String appVersion = '1.1.0';
   static const String defaultGithubRepo = 'Johnjulve/SweetBites';
 
   // Bakery defaults
