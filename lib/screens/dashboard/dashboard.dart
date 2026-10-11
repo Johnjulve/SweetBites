@@ -34,7 +34,11 @@ class _DashboardScreenState extends State<DashboardScreen> {
   @override
   void initState() {
     super.initState();
-    _loadDashboard();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) {
+        _loadDashboard();
+      }
+    });
   }
 
   Future<void> _loadDashboard() async {
@@ -167,7 +171,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
         physics: const NeverScrollableScrollPhysics(),
         mainAxisSpacing: 10,
         crossAxisSpacing: 10,
-        childAspectRatio: 1.8,
+        childAspectRatio: 1.5,
         children: [
           SummaryCard(
             title: 'Orders Today',
