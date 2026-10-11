@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.1.0] - 2026-10-11
+
+### Fixed & Improved
+- **Dashboard Service Build-Phase Assertion**:
+  - Wrapped `_loadDashboard()` in `WidgetsBinding.instance.addPostFrameCallback` in `DashboardScreen`, eliminating the `setState() or markNeedsBuild() called during build` assertion crash when `DashboardService.loadDashboard()` fires `notifyListeners()` during initial mount.
+- **Summary Metrics Layout Overflows**:
+  - Adjusted summary grid `childAspectRatio` from `1.8` to `1.5`, providing sufficient vertical height for 2-line metric cards and eliminating the 19px `RenderFlex` bottom overflow warnings across viewports.
+- **Inventory & Costing TabBar Alignment**:
+  - Enabled `isScrollable: true` and `tabAlignment: TabAlignment.center` on the `InventoryScreen` top `TabBar`, preventing subpixel horizontal float calculation overflows (0.00175px) on compact screen widths.
+- **Android Release Internet Permission**:
+  - Declared `android.permission.INTERNET` in `AndroidManifest.xml`, allowing the GitHub release updater and in-app update checks to query network endpoints on release APKs.
+
+---
+
 ## [1.0.0] - 2026-10-11
 
 ### Added
