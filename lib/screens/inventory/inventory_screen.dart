@@ -112,6 +112,8 @@ class _InventoryScreenState extends State<InventoryScreen>
         scrolledUnderElevation: 0,
         bottom: TabBar(
           controller: _tabController,
+          tabAlignment: TabAlignment.center,
+          isScrollable: true,
           indicatorColor: AppTheme.primaryColor,
           labelColor: AppTheme.primaryColor,
           unselectedLabelColor: AppTheme.textSecondary,
